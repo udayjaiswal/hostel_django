@@ -1,0 +1,374 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Hostel</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orelega+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Orelega+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Orelega+One&family=Pacifico&family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Orelega+One&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+<!-- navbar -->
+  <nav class="navbar bg-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="logo " href="{% url 'home' %}"><span
+          style="font-size: 30px; font-family: Abril Fatface, serif ;">Hostel</span> Hunt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hostel Hunt</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'find' %}">Find Hostel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'list' %}">List Your Hostel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'contact' %}">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'login' %}">Login/Signup</a>
+            </li>
+
+
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <br>
+
+          <hr>
+
+          <i class="fa-brands fa-instagram icon"></i>
+          <i class="fa-brands fa-facebook icon"></i>
+          <i class="fa-brands fa-twitter icon"></i>
+          <i class="fa-brands fa-youtube icon"></i>
+          <i class="fa-brands fa-linkedin icon"></i>
+          <hr>
+          <p class="ms-5 text-light">
+            &copy 2025 All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ---------------------------------------------------------------------- -->
+
+  <div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-sm-6" style="font-family: Abril Fatface, serif; ">
+            <p style="font-size: 75px;" class="ms-5">
+                Want <span style="color: brown;">guests who</span>
+                love <span style="color: brown;">hostels</span>?
+                We've <span style="color: brown;">got</span> them.
+            </p>
+            <p style="font-size: 23px; margin-top: -20px;" class="ms-5">Fill your hostel with travellers who love to socialise and spend more.</p>
+            <button style="height: 50px; width: 550px; margin-left: 40px;  border-radius: 20px; background-color: brown; font-family: Lilita One, sans-serif; font-size: 25px; color: white;">List Your Property Now</button>
+
+        </div>
+        <div class="col-sm-6">
+            <img src="../../static/main/img/crowd2.jpg" class="w-100" alt="">
+        </div>
+    </div>
+  </div>
+  <!-- Grow With us-->
+
+  <div class="container-fluid" id="grow" >
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 mt-5">
+            <img src="../../static/main/img/grow.png" height="820vh" width="550wh" alt="">
+        </div>
+        <div class="col-sm-5 mt-5">
+            <p class="mt-5" style="font-size: 26px; font-family: Lilita One, sans-serif;">Grow your business faster with our social travellers who spend more, post more on social, and leave better reviews.</p>
+
+            <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="../../static/main/img/grow1.webp" height="60vh" width="60wh" class="img-fluid rounded-start ms-3 mt-4" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h4 class="card-title">Social travellers</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- .......................................................................... -->
+              <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="../../static/main/img/grow2.webp" height="60vh" width="60wh" class="img-fluid rounded-start ms-3 mt-4" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h4 class="card-title">Helpful People</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- ............................................................................ -->
+              <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="../../static/main/img/grow3.webp" height="60vh" width="60wh" class="img-fluid rounded-start ms-3 mt-4" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h4 class="card-title">Increased income</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- ........................................................................... -->
+              <div class="card mb-3" style="max-width: 700px;border-radius: 40px;">
+                <div class="row g-0">
+                  <div class="col-md-2">
+                    <img src="../../static/main/img/grow4.webp" height="60vh" width="60wh" class="img-fluid rounded-start ms-3 mt-4" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h4 class="card-title">Free Promotion</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- ........................................................................... -->
+              <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                <div class="row g-0 ">
+                  <div class="col-md-2">
+                    <img src="../../static/main/img/grow5.webp" height="60vh" width="60wh" class="img-fluid rounded-start ms-3 mt-4" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h4 class="card-title">Experienced team</h4>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- ........................................................... -->
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-6" id="trust">
+            <p>Trusted by <span style="color: brown;">20K+</span></p>
+            <p><span style="color: brown;">properties</span> & millions of</p>
+            <p>global <span style="color: brown;">travellers</span></p>
+        </div>
+        <div class="col-sm-6 ">
+            <img src="../../static/main/img/trust3.webp" height="400vh" width="800wh" alt="">
+        </div>
+
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 mt-3">
+                <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                    <div class="row g-0">
+                      <div class="col-md-2 ">
+                        <h1 style="background-color: brown; border-radius: 50%; height: 80px; width: 80px; margin-top: 10px; margin-left: 20px; text-align: center; padding-top: 15px; color: white;">1</h1>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h3 class="card-title">Sign up to get started</h3>
+                          <p class="card-text">Create your property account</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <h1 style="background-color: brown; border-radius: 50%; height: 80px; width: 80px; margin-top: 10px; margin-left: 20px; text-align: center; padding-top: 15px; color: white;">2</h1>
+
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h3 class="card-title">We'll verify your property</h3>
+                          <p class="card-text">Our Market Support Team will be in touch</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <h1 style="background-color: brown; border-radius: 50%; height: 80px; width: 80px; margin-top: 10px; margin-left: 20px; text-align: center; padding-top: 15px; color: white;">3</h1>
+
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h3 class="card-title">Start onboarding</h3>
+                          <p class="card-text">List your property and all your info</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-3" style="max-width: 700px; border-radius: 40px;">
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <h1 style="background-color: brown; border-radius: 50%; height: 80px; width: 80px; margin-top: 10px; margin-left: 20px; text-align: center; padding-top: 15px; color: white;">4</h1>
+
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h3 class="card-title">We'll put your listing live. Congrats!</h3>
+                          <p class="card-text">Your property will be visible to millions of travellers</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <p style="font-size: 70px; font-family: Abril Fatface, serif;">Sign up today.</p>
+                <p style="font-size: 70px; font-family: Abril Fatface, serif;">It's <span style="color: brown;">easy</span> & <span style="color: brown;">free</span>.</p>
+                <p style="font-size: 28px;">Our dedicated customer service team will guide you through all the steps.</p>
+                <button style="height: 50px; width: 550px; margin-top: 10px;  border-radius: 20px; background-color: brown; font-family: Lilita One, sans-serif; font-size: 25px; color: white;">List Your Property Now</button>
+            </div>
+            </div>
+
+        </div>
+        <div class="row mt-5"></div>
+  </div>
+    
+<!-- ....................................Trust --------------------------------------------->
+
+<!-- footer -->
+
+
+<footer class="footer text-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6"><h1>Hostel Hunt</h1></div>
+        <div class="col-sm-2"><h1>|</h1></div>
+        <div class="col-sm-4 icons"><i class="fa-brands fa-instagram icon"></i>
+          <i class="fa-brands fa-facebook icon"></i>
+          <i class="fa-brands fa-twitter icon"></i>
+          <i class="fa-brands fa-youtube icon"></i>
+          <i class="fa-brands fa-linkedin icon"></i>
+      
+        </div>
+      </div>
+      <hr>
+     <div class="row links">
+      <div class="col-sm-3">
+        <ul>
+            <a href=""><li>Accomodations</li></a>
+            <a href=""><li>Destinations</li></a>
+            <a href=""><li>Bam hostels</li></a>
+            <a href=""><li>Hostels</li></a>
+            <a href=""><li>Workations</li></a>
+            <a href=""><li>Group Bookings</li></a>
+            
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <a href=""><li>Important Links</li></a>
+          <a href=""><li>Career
+          </li></a>
+          <a href=""><li>Sitemap</li></a>
+          <a href=""><li>Volunteer
+          </li></a>
+          <a href=""><li>Invest & Partner</li></a>
+          <a href=""><li>Press Mentions</li></a>
+          <a href=""><li>About Us</li></a>
+         
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <a href=""><li>Policies</li></a>
+          <a href=""><li>Guest Policy</li></a>
+          <a href=""><li>Privacy Policy</li></a>
+          <a href=""><li>Refund Policy</li></a>
+          <a href=""><li>Terms & Conditions</li></a>
+          
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <a href=""><li>Contact Details</li></a>
+          <a href=""><li>Support Center</li></a>
+          <a href=""><li>Community
+          </li></a>
+          <a href=""><li>Contact Us</li></a>
+          
+        </ul>
+      </div>
+     </div>
+     <hr>
+     <div class="row text-center">
+      <div class="col-sm-12 "></div>
+      <p>
+        Hostel Hunt Hospitality Private Limited &copy 2025 All Rights Reserved
+      </p>
+     </div>
+    </div>
+  </footer>
+
+  <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+   <script src="{% static 'main/js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>

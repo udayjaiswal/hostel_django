@@ -1,0 +1,258 @@
+
+body{
+    font-family: Poppins, sans-serif;
+}
+/* navbar */
+#offcanvasNavbar{
+    width: 500px;
+    border-radius: 30px; 
+    margin-right: 40px;
+    font-family: Poppins, sans-serif;
+    color: brown;
+    background-image: linear-gradient(#db995fbe,#e0a068d0),linear-gradient(black,black);
+    height: 100vh;
+    width: 100wh;
+    background-size: cover;
+    font-size:25px;
+}
+.nav-item:hover{
+    color: black;
+    font-size: 30px;
+}
+.navbar-toggler-icon:hover{
+    font-size: 25px;
+    
+}
+
+/* sliders */
+#slider{
+    background-size: cover;
+    height: 90vh;
+    width: 100wh;
+}
+#slider2{
+    background-size: cover;
+   
+    font-family: "Abril Fatface", serif;
+}
+#slider2 .row #p{
+    font-size: 30px;
+    font-family:  Poppins, sans-serif;
+    
+}
+#slider2 .row .col-sm-1 a{
+    font-size: 30px;
+    font-family:  Poppins, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+#where{
+    height: 150px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -80px;
+    box-shadow: 0px 0px 10px 1px;
+    font-family: "Poppins", sans-serif;
+}
+#city{
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    color:white;
+    height: 50px;
+    width: 200px;
+    background-color:brown;
+    padding-left: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.logo2{
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    color:white;
+    height: 50px;
+    width: 200px;
+    background-color:brown;
+    padding-left: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+#slider3{
+    
+    background-size: cover;
+    height: 90vh;
+    width: 100wh;
+    margin-top: 2px;
+}
+#slider3 .row .col-sm-5{
+    /* background-color: black; */
+    font-family: "Orelega One", serif;
+    margin-left: 50px;
+    padding-left: 30px;
+    margin-top: 100px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+#room{
+    height: 400px;
+    gap: 40px;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+#slider3 #room .col-sm-2{
+    border-radius: 20px;
+    /* border: 1px solid rgba(255, 255, 255, 0.486); */
+    height:400px;
+    text-align: center;
+    font-size: 25px;
+    /* background-color: rgba(255, 255, 255, 0.534); */
+}
+#room #n{
+    margin-left: 80px;
+}
+#room #n .row{
+    height: 220px;
+    /* background-color: black; */
+    border-radius: 15px;
+}
+#room #n .row2{
+    height: 180px;
+    border-radius: 15px;
+    width: 280px;
+}
+#room .col-sm-2 .row{
+    height: 220px;
+    /* background-color: black; */
+    border-radius: 15px;
+}
+#room .col-sm-2 .row2{
+    height: 180px;
+    border-radius: 15px;
+    width: 280px;
+}
+#slider4{
+    background-image: url(/img/slider3.avif);
+    background-size: cover;
+    height: 90vh;
+    width: 100wh;
+    font-family: "Abril Fatface", serif;
+}
+/* icons */
+.icon{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.footer{
+    background-color: black;
+}
+.links{
+    margin-top: 50px;
+}
+.links .col-sm-3 ul{
+    font-size: 24px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+.links .col-sm-3 ul a{
+    text-decoration: none;
+    color: white;
+}
+/* find hostel */
+#find{
+    height: 100vh;
+    width: 100wh;
+    background-size: cover;
+}
+.bang{
+    
+    width: 100wh;
+    height: 80vh;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.col .card{
+    box-shadow: 0px 0px 10px 1px;
+    border-radius: 10px ;
+}
+#pool{
+    border-radius: 20px;
+    /* border: 1px solid rgb(206, 194, 194); */
+    box-shadow: 0px 0px 10px 1px;
+    margin-bottom: 80px;
+
+}
+
+/* Add your property */
+#grow{
+    background-image: linear-gradient(white,blanchedalmond);
+    height: auto;
+    width: 100wh;
+}
+#trust{
+    font-family: "Abril Fatface", serif;
+    font-size: 70px;
+    padding-left: 40px;
+}
+
+
+/* About us  */
+#aboutus{
+    background: linear-gradient(white,#b9b3b1);
+  
+}
+#aboutus .row .col-sm-5 p{
+    font-family: "Abril Fatface", serif;
+    font-size: 100px;
+    margin-top: 40px;
+}
+.abimg{
+    margin-top: 50px;
+    height: 65vh;
+    margin-left: 40px;
+}
+.about{
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+}
+#aboutus .row .col-sm-12 p{
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+    margin-top: 40px;
+}
+#Provides{
+    background: linear-gradient(white,#b9b3b1);
+    height: 100vh;
+    width: 100wh;
+}
+.partyimg{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 60vh;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 1px;
+}
+.contact{
+    height: 60px;
+    width: 550px;
+    margin-left: 150px;
+    margin-top: 25px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: 3px solid #4d5dae;
+    background-color: #c1c4d43a;;
+}
+#contact{
+    font-family: "Abril Fatface", serif;
+    font-size: 70px;
+}
